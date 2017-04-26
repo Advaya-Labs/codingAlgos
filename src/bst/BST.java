@@ -10,7 +10,6 @@ public class BST<T extends Comparable<T>> {
     public void insert(T data) {
         head = insertBST(data, head);
     }
-
     private NodeBST<T> insertBST(T data, NodeBST<T> curNode) {
         if (curNode == null)
             curNode = new NodeBST<>(data);
